@@ -19,7 +19,7 @@ User.init(
           },
           
           username: {
-            type: DataTypes.string,
+            type: DataTypes.STRING,
             allowNull: false
           },
 
