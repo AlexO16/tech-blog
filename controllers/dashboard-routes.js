@@ -2,7 +2,7 @@ const router = require('express').Router();
 const { Post } = require('../models/');
 const withAuth = require('../utils/auth');
 
-router.get('/dashboard', withAuth, async (req, res) => {
+router.get('/', withAuth, async (req, res) => {
     try {
         const postData = await Post.findAll({
             where: {
@@ -13,7 +13,6 @@ router.get('/dashboard', withAuth, async (req, res) => {
         const post = postData.map((post) => post.get({ plain: true }));
 
         res.render('dashboard', {
-            layout: 'post',
             post,
         });
 

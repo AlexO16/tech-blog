@@ -11,6 +11,7 @@ router.post('/', async (req, res) => {
   })
 
     .then((userData) => {
+      const newUser = userData.get({plain: true})
       req.session.save(() => {
         req.session.userId = newUser.id;
         req.session.username = newUser.username;

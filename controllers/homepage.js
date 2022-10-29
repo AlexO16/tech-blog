@@ -43,7 +43,7 @@ router.get('/post/:id', async (req, res) => {
         });
 
         const post = postData.get({ plain: true });
-        post.comments = post.comments //??
+        post.comments = post.comments 
 
         res.render('post', {
             ...post,
