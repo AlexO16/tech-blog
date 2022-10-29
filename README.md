@@ -29,5 +29,8 @@
 
   # Links
 
+  * [Repositiry](https://github.com/AlexO16/tech-blog)
 
   # Credits
+  * [Alex Oleynik](https://github.com/AlexO16)
+  * [University of Minnesota](https://courses.bootcampspot.com/courses/2176/assignments/38759?module_item_id=750563)
