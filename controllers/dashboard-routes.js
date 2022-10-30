@@ -4,7 +4,7 @@ const withAuth = require('../utils/auth');
 
 router.get('/', withAuth, async (req, res) => {
     try {
-        console.log(req.session.userId)
+        //console.log(req.session.userId)
         const postData = await Post.findAll({
             where: {
                 user_id: req.session.userId
